@@ -32,5 +32,18 @@ public class Main {
 
         System.out.println("Student: " + name);
         System.out.println("Grade: " + grade);
+
+        try {
+
+    System.out.print("Enter Marks: ");
+    int marks = input.nextInt();
+
+    if(marks < 0 || marks > 100)
+        throw new Exception("Invalid Marks");
+
+} catch(Exception e) {
+
+    System.out.println(e.getMessage());
+}
     }
 }
